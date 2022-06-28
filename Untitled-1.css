@@ -1,0 +1,91 @@
+
+/* footer */
+.footer{
+  position: relative;
+  border-top: 1px solid #eeeeee
+}
+
+.logo-f{
+  width: 202px;
+  height: 39.22px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 56px;
+  margin: auto;
+  
+}
+
+.link{
+  position: absolute;
+  display: flex;
+  width: 139px;
+  height: 25px;
+  top: 119.22px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+}
+
+.posse公式サイト{
+  width: 140px;
+  height: 25px;
+  left: 1px;
+  top: 0px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color:#666666;
+}
+
+.Frame{
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 140px;
+  top: 5px;
+}
+
+.SNS-f{
+  display: flex;
+  position: absolute;
+  width: 108px;
+  height: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 176.22px;
+  column-gap: 8px;
+}
+
+.Group7-f{
+  width: 50px;
+  height: 50px;
+  top: 176.22px;
+  left: 0px;
+  right: 58px;
+}
+
+.Group10-f{
+  width: 50px;
+  height: 50px;
+  top: 176.22px;
+  left: 58px;
+  right: 0px;
+}
+
+.copyright{
+  position: absolute;
+  width: 82px;
+  height: 13px;
+  top: 310.22px;
+  left: 679px;
+}
+
+
+
+

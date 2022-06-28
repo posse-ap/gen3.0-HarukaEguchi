@@ -1,0 +1,282 @@
+.header{
+  display: flex;
+  width: 1440px;
+  height: 80px;
+}
+
+.Frame5{
+  display: flex;
+  margin-left: auto;
+}
+
+.menu{
+  display: flex;
+  width: 180px;
+  height: 25px;
+  position: relative;
+}
+
+.nav1{
+  width: 90px;
+  height: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #666666;
+  position: absolute;
+  top: 50%;
+}
+
+.nav2{
+  width: 50px;
+  height: 22px;
+  left: 115px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #666666;
+  position: absolute;
+  top: 50%;
+}
+
+.SNS{
+  display: flex;
+  width: 116px;
+  height: 50px;
+  left:192px;
+  gap: 16px;
+  top: 15px;
+}
+
+.nav3{
+  width: 50px;
+  height: 50px;
+}
+
+.nav4{
+  width: 50px;
+  height: 50px;
+  left: 66px;
+}
+
+/* 公式LINE */
+.line{
+  position: absolute;
+  width: 984px;
+  height: 358px;
+  left:230px;
+  top: 1438px;
+}
+
+.background{
+  position: absolute;
+  left: 230px;
+  right: 0%;
+  top:1438px;
+  bottom: 0.28%;
+  width: 984px;
+  height: 357px;
+}
+
+
+.公式LINE{
+  position: absolute;
+  display: flex;
+  width: 329px;
+  height: 65px;
+  top: 68px;
+  left: 327px;
+}
+
+.icon{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 13px;
+  left: 0px;
+
+}
+
+.POSSE公式LINE{
+  position: absolute;
+  width: 290px;
+  height: 65px;
+  left: 48px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 180%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.質問{
+  position: absolute;
+  width: 540px;
+  height: 66px;
+  top: 135px;
+  left: 225px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.link{
+  position: absolute;
+  display: flex;
+  width: 320px;
+  height: 50px;
+  top: 239px;
+  left: 333px;
+  background: #FFFFFF;
+  border-radius: 98px;
+}
+
+.LINE追加{
+  position: absolute;
+  width: 77px;
+  height: 23.39px;
+  top: 13.9px;
+  left: 121px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #666666;
+}
+
+.icon-link{
+  position: absolute;
+  width: 14px; 
+  height: 14px;
+  top: 15px;
+  left: 287px;
+}
+
+/* footer */
+.footer{
+  position: relative;
+  border: 1px solid #eeeeee;
+  width: 1440px;
+  height: 355px;
+  top: 1875px;
+  left: 0px;
+}
+
+.logo-f{
+  width: 202px;
+  height: 39.22px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 56px;
+  margin: auto;
+  
+}
+
+.link-f{
+  position: absolute;
+  display: flex;
+  width: 139px;
+  height: 25px;
+  top: 119.22px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+}
+
+.posse公式サイト{
+  width: 140px;
+  height: 25px;
+  left: 1px;
+  top: 0px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color:#666666;
+}
+
+.Frame{
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 140px;
+  top: 5px;
+}
+
+.SNS-f{
+  display: flex;
+  position: absolute;
+  width: 108px;
+  height: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 176.22px;
+  gap: 8px;
+}
+
+.Group7-f{
+  width: 50px;
+  height: 50px;
+  top: 176.22px;
+  left: 0px;
+  right: 58px;
+  
+}
+
+.Group10-f{
+  width: 50px;
+  height: 50px;
+  top: 176.22px;
+  left: 58px;
+  right: 0px;
+  
+}
+
+.copyright{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 274.22px;
+  bottom: 0px;
+  border: 1px solid #eeeeee
+}
+
+.copyright-text{
+  position: absolute;
+  width: 90px;
+  height: 13px;
+  top: 36px;
+  bottom: 31.78px;
+  left: 47.15%;
+  right: 47.15%;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #666666;
+}
+
