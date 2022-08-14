@@ -169,6 +169,20 @@ ul{
   list-style: none;
 }
 
+.arrow{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 12px solid #333333;
+  border-right: 0;
+}
+
+.arrow:disabled{
+  display: none;
+}
+
 .choices{
   display: flex;
   gap: 24px;
@@ -190,6 +204,8 @@ ul{
   border-radius: 8px;
   font-family:"Noto Sans JP";
   cursor:pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 .choice1:hover{
@@ -208,6 +224,8 @@ ul{
   border-radius: 8px;
   font-family:"Noto Sans JP";
   cursor:pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 .choice2:hover{
@@ -226,11 +244,69 @@ ul{
   border-radius: 8px;
   font-family:"Noto Sans JP";
   cursor:pointer;
+  display: flex;
+  justify-content: space-between;
 }
 
 .choice3:hover{
   opacity:0.6
 }
+
+.answerbox{
+  width: 984px;
+  height: 143px;
+  background: #FFF2F5;
+  border-radius: 8px;
+  display: none;
+}
+
+.answer-correct-title{
+  position: absolute;
+  width: 75px;
+  height: 36px;
+  left: 40px;
+  top: 24px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #E34E70;
+}
+
+.answer-correct-content{
+
+}
+
+.answer-A{
+  position: absolute;
+  width: 18px;
+  height: 43px;
+  margin-left: 40px;
+  margin-top: 76px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 180%;
+  color: #333333;
+}
+
+.js-answerText{
+  position: absolute;
+  width: 76px;
+  height: 32px;
+  margin-left: 74px;
+  margin-top: 83px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+}
+
 
 .reference{
   width: 984px;
