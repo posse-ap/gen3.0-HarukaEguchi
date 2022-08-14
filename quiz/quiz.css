@@ -112,7 +112,7 @@
   color: #FFFFFF;
 }
 
-quiz{
+.Quiz{
   margin-top: 120px;
   width: 984px;
   left: 228px;
@@ -317,6 +317,18 @@ ul{
   border-radius: 8px;
   display: flex;
 }
+
+.reference-6{
+  width: 984px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: #F6F6F6;
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 100px;
+}
+
 .reference-icon{
   width: 24.96px;
   height: 16.39px;
@@ -369,116 +381,6 @@ ul{
   margin-top: 30px;
   width: 718px;
   height:381px;
-}
-
-/* footerどこー－－－－－ */
-footer{
-  position: relative;
-  border: 1px solid #eeeeee;
-  height: 355px;
-  left: 0px;
-}
-
-.logo-f{
-  width: 202px;
-  height: 39.22px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 56px;
-  margin: auto;
-  
-}
-
-.link-f{
-  position: absolute;
-  display: flex;
-  width: 139px;
-  height: 25px;
-  top: 119.22px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  
-}
-
-.posse公式サイト{
-  width: 140px;
-  height: 25px;
-  left: 1px;
-  top: 0px;
-  font-family: 'Noto Sans JP';
-  font-style: normal;
-  font-weight: 400;
-  size: 14px;
-  line-height: 25px;
-  text-align: center;
-  color:#666666;
-}
-
-.Frame{
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 140px;
-  top: 5px;
-}
-
-.SNS-f{
-  display: flex;
-  position: absolute;
-  width: 108px;
-  height: 50px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 176.22px;
-  gap: 8px;
-}
-
-.Group7-f{
-  width: 50px;
-  height: 50px;
-  top: 176.22px;
-  left: 0px;
-  right: 58px;
-  
-}
-
-.Group10-f{
-  width: 50px;
-  height: 50px;
-  top: 176.22px;
-  left: 58px;
-  right: 0px;
-  
-}
-
-.copyright{
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 274.22px;
-  bottom: 0px;
-  border: 1px solid #eeeeee
-}
-
-.copyright-text{
-  position: absolute;
-  width: 90px;
-  height: 13px;
-  top: 36px;
-  bottom: 31.78px;
-  left: 47.15%;
-  right: 47.15%;
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #666666;
 }
 
 /* 公式LINE */
@@ -591,7 +493,7 @@ line{
 
 .icon-link{
   position: absolute;
-  width: 14px; 
+  width: 14px;
   height: 14px;
   top: 15px;
   left: 287px;
@@ -599,8 +501,9 @@ line{
 
 /* footer */
 .footer{
+  width: 100%;
   position: relative;
-  border: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
   height: 355px;
   left: 0px;
   margin-top: 40px;
@@ -615,7 +518,7 @@ line{
   right: 0;
   top: 56px;
   margin: auto;
-  
+
 }
 
 .link-f{
@@ -627,7 +530,6 @@ line{
   left: 0;
   right: 0;
   margin: auto;
-  
 }
 
 .posse公式サイト{
@@ -670,7 +572,6 @@ line{
   top: 176.22px;
   left: 0px;
   right: 58px;
-  
 }
 
 .Group10-f{
@@ -679,7 +580,6 @@ line{
   top: 176.22px;
   left: 58px;
   right: 0px;
-  
 }
 
 .copyright{
@@ -688,7 +588,7 @@ line{
   right: 0%;
   top: 274.22px;
   bottom: 0px;
-  border: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
   text-align: center;
 }
 
@@ -708,4 +608,3 @@ line{
   letter-spacing: 0.1em;
   color: #666666;
 }
-
