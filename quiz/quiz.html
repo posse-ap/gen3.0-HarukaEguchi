@@ -8,29 +8,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<script src="./jquery-3.6.0.min.js"></script>
-<script src="./quiz.js"></script>
 <title>ITクイズページ</title>
 </head>
 <body>
   <header>
     <div class="header">
       <div class="Frame5">
-        <div class="logo"><img src="./posse-logo.png"></div>
+        <div class="logo"><img src="./img/posse-logo.png"></div>
         <div class="navigation">
           <div class="menu">
-            <div class="nav1">POSSEとは</div>
-            <div class="nav2">クイズ</div>
+            <div class="nav1"><a href="index.html">POSSEとは</a></div>
+            <div class="nav2"><a href="quiz.html">クイズ</a></div>
           </div>
           <div class="SNS">
-            <div class="nav3"><img src="./insta-icon.png"></div>
-            <div class="nav4"><img src="./twitter-icon.png"></div>
+            <div class="nav3"><a href="https://www.instagram.com/posse_programming/"><img src="./img/insta-icon.png"></a></div>
+            <div class="nav4"><a href="https://twitter.com/posse_program"><img src="./img/twitter-icon.png"></a></div>
           </div>
         </div>
       </div>
     </div>
     <div class="header-photo">
-        <img src="./quiz-header.png">
+        <img src="./img/quiz-header.png">
           <div class="header-title1">POSSE課題</div>
           <div class="header-title2">ITクイズ</div>
           </div>
@@ -39,21 +37,27 @@
     <div class="quiz1 js-quiz" data-quiz="0">
       <div class="Q">Q1</div>
       <div class="quiztext">日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</div>
-      <div class="q1-image"><img src="./q1-img.png" width="718px" height="357px" ></div>
+      <div class="q1-image"><img src="./img/q1-img.png" width="718px" height="357px" ></div>
       <div class="A">A</div>
       <ul class="choices">
-        <li class="choice1 js-answer">
-        <div class="choicetext">約28万人</div>
+        <li>
+          <button class="choice js-answer" data-answer="0">
+        約28万人
           <div class="arrow"></div>
-        </li>
-        <li class="choice2 js-answer">
-          <div class="choicetext">約79万人</div>
+        </button>
+      </li>
+      <li>
+        <button class="choice js-answer" data-answer="1">
+          約79万人
           <div class="arrow"></div>
-        </li>
-        <li class="choice3 js-answer">
-          <div class="choicetext">約183万人</div>
+        </button>
+      </li>
+      <li>
+        <button class="choice js-answer" data-answer="2">
+          約183万人
           <div class="arrow"></div>
-        </li>
+        </button>
+      </li>
       </ul>
       <div class="answerbox js-answerBox">
         <p class="answer-correct-title js-answerTitle"></p>
@@ -63,14 +67,14 @@
         </p>
       </div>
       <div class="reference">
-        <div class="reference-icon"><img src="./reference-icon.png"></div>
+        <div class="reference-icon"><img src="./img/reference-icon.png"></div>
         <div class="reference-text">経済産業省 2019年3月 － IT 人材需給に関する調査</div>
       </div>
     </div>
     <div class="quiz2" data-quiz="1">
       <div class="Q">Q2</div>
       <div class="quiztext">既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？</div>
-      <div class="q2-image"><img src="./q2-img.png" width="458px" height="358px" ></div>
+      <div class="q2-image"><img src="./img/q2-img.png" width="458px" height="358px" ></div>
       <div class="A">A</div>
       <ul class="choices">
         <li class="choice1 js-answer">
@@ -97,7 +101,7 @@
       <div class="quiz3" data-quiz="2">
       <div class="Q">Q3</div>
       <div class="quiztext">IoTとは何の略でしょう？</div>
-      <div class="q3-image"><img src="./q3-img.png" width="552px" height="357px" ></div>
+      <div class="q3-image"><img src="./img/q3-img.png" width="552px" height="357px" ></div>
       <div class="A">A</div>
       <ul class="choices">
         <li class="choice1 js-answer">
@@ -124,7 +128,7 @@
       <div class="quiz4" data-quiz="3">
       <div class="Q">Q4</div>
       <div class="quiztext">日本が目指すサイバー空間とフィジカル空間を高度に融合させたシステムによって開かれる未来社会のことをなんと言うでしょうか？</div>
-      <div class="q4-image"><img src="./q4-img.png" width="520px" height="352px" ></div>
+      <div class="q4-image"><img src="./img/q4-img.png" width="520px" height="352px" ></div>
       <div class="A">A</div>
       <ul class="choices">
         <li class="choice1 js-answer">
@@ -148,14 +152,14 @@
         </p>
       </div>
       <div class="reference">
-        <div class="reference-icon"><img src="./reference-icon.png"></div>
+        <div class="reference-icon"><img src="./img/reference-icon.png"></div>
         <div class="reference-text">Society5.0 - 科学技術政策 - 内閣府</div>
       </div>
     </div>
     <div class="quiz5" data-quiz="4">
       <div class="Q">Q5</div>
       <div class="quiztext">イギリスのコンピューター科学者であるギャビン・ウッド氏が提唱した、ブロックチェーン技術を活用した「次世代分散型インターネット」のことをなんと言うでしょう？</div>
-      <div class="q5-image"><img src="./q5-img.png" width="718px" height="324px" ></div>
+      <div class="q5-image"><img src="./img/q5-img.png" width="718px" height="324px" ></div>
       <div class="A">A</div>
       <ul class="choices">
         <li class="choice1 js-answer">
@@ -182,7 +186,7 @@
       <div class="quiz6" data-quiz="5">
       <div class="Q">Q6</div>
       <div class="quiztext">先進テクノロジー活用企業と出遅れた企業の収益性の差はどれくらいあると言われているでしょうか？</div>
-      <div class="q6-image"><img src="./q6-img.png" width="718px" height="381px" ></div>
+      <div class="q6-image"><img src="./img/q6-img.png" width="718px" height="381px" ></div>
       <div class="A">A</div>
       <ul class="choices">
         <li class="choice1 js-answer">
@@ -206,34 +210,34 @@
         </p>
       </div>
       <div class="reference-6">
-        <div class="reference-icon"><img src="./reference-icon.png"></div>
+        <div class="reference-icon"><img src="./img/reference-icon.png"></div>
         <div class="reference-text">Accenture Technology Vision 2021 </div>
       </div>
     </div>
     <line>
       <div class="background">
           <div class="公式LINE">
-          <div class="icon"><img src="icon-line.png"></div>
+          <div class="icon"><img src="./img/icon-line.png"></div>
           <div class="POSSE公式LINE">POSSE 公式LINE</div>
           </div>
           <div class="質問"><p>公式LINEにてご質問を随時受け付けております。<br>詳細やPOSSE最新情報につきましては、公式LINEにてお知らせ致しますので<br>下記ボタンより友達追加をお願いします！</p>
           </div>
           <div class="link">
           <div class="LINE追加">LINE追加</div>
-          <div class="icon-link"><img src="./icon-link.png"></div>
+          <div class="icon-link"><img src="./img/icon-link.png"></div>
           </div>
       </div>
     </line>
     <footer>
       <div class="footer">
-        <div class="logo-f"><img src="posse-logo.png"></div>
+        <div class="logo-f"><img src="./img/posse-logo.png"></div>
         <div class="link-f">
           <div class="posse公式サイト">POSSE公式サイト</div>
-          <div class="Frame"><img src="./icon-link.png"></div>
+          <div class="Frame"><img src="./img/icon-link.png"></div>
         </div>
         <div class="SNS-f">
-          <div class="Group7-f"><img src="twitter-icon.png"></div>
-          <div class="Group10-f"><img src="insta-icon.png"></div>
+          <div class="Group7-f"><img src="./img/twitter-icon.png"></div>
+          <div class="Group10-f"><img src="./img/insta-icon.png"></div>
         </div>
         <div class="copyright">
           <div class="copyright-text">
@@ -244,5 +248,6 @@
     </footer>
   
   </div>
+  <script src="./quiz.js"></script>
 </body>
 </html>

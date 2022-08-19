@@ -26,8 +26,8 @@
       index: 1,
       value: '約５倍',
     }
-  ]
-}
+  ];
+
 
 //  問題の取得 
   const allQuiz = document.querySelectorAll('.js-quiz');
@@ -72,5 +72,5 @@ allQuiz.forEach(quiz => {
       setClassName(answerBox, isCorrect);
       })
     })
-  }
-)
+  })
+}
