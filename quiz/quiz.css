@@ -28,16 +28,20 @@ a{
   align-items: center;
 }
 
-.navigation{
+.header-inner{
   display: flex;
   margin-right: 30px;
 }
 
-.menu{
+.nav-list{
   display: flex;
   width: 180px;
   height: 25px;
   position: relative;
+}
+
+li{
+  list-style: none;
 }
 
 .nav1{
@@ -122,7 +126,7 @@ a{
   color: #FFFFFF;
 }
 
-.Quiz{
+.quiz{
   margin-top: 120px;
   width: 984px;
   left: 228px;
@@ -552,7 +556,7 @@ line{
   left: 0;
   right: 0;
   margin: auto;
-  top: 176.22px;
+  top: 42px;
   gap: 8px;
 }
 
@@ -576,7 +580,7 @@ line{
   position: absolute;
   left: 0%;
   right: 0%;
-  top: 274.22px;
+  top: 234.22px;
   bottom: 0px;
   border-top: 1px solid #eeeeee;
   text-align: center;
