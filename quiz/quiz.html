@@ -33,26 +33,31 @@
           <div class="header-title2">ITクイズ</div>
           </div>
   </header>
-  <div class="Quiz">
-    <div class="quiz1 js-quiz" data-quiz="0">
-      <div class="Q">Q1</div>
-      <div class="quiztext">日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</div>
-      <div class="q1-image"><img src="./img/q1-img.png" width="718px" height="357px" ></div>
-      <div class="A">A</div>
+  <div class="quiz-container" id="js-quizContainer">
+    <section class="quiz1 js-quiz" data-quiz="0">
+      <div class="quiz-box-question">
+        <h2 class-="quiz-box-question-title">
+          <span class="Q">Q1</span>
+      <span class="quiztext">日本のIT人材が2030年には最大どれくらい不足すると言われているでしょうか？</span>
+    </h2>  
+      <figure class="quiz-box-image"><img src="./img/q1-img.png" alt></figure>
+    </div>
+    <div class="quiz-box-answer">
+      <span class="A">A</span>
       <ul class="choices">
-        <li>
+        <li class="quiz-answer-item">
           <button class="choice js-answer" data-answer="0">
         約28万人
           <div class="arrow"></div>
         </button>
       </li>
-      <li>
+      <li class="quiz-answer-item">
         <button class="choice js-answer" data-answer="1">
           約79万人
           <div class="arrow"></div>
         </button>
       </li>
-      <li>
+      <li class="quiz-answer-item">
         <button class="choice js-answer" data-answer="2">
           約183万人
           <div class="arrow"></div>
@@ -66,11 +71,12 @@
           <span class="js-answerText"></span>
         </p>
       </div>
-      <div class="reference">
-        <div class="reference-icon"><img src="./img/reference-icon.png"></div>
-        <div class="reference-text">経済産業省 2019年3月 － IT 人材需給に関する調査</div>
-      </div>
     </div>
+      <cite class="reference">
+        <i class="reference-icon"><img src="./img/reference-icon.png"></i>
+        <div class="reference-text">経済産業省 2019年3月 － IT 人材需給に関する調査</div>
+      </cite>
+    </section>
     <div class="quiz2" data-quiz="1">
       <div class="Q">Q2</div>
       <div class="quiztext">既存業界のビジネスと、先進的なテクノロジーを結びつけて生まれた、新しいビジネスのことをなんと言うでしょう？</div>
@@ -214,7 +220,8 @@
         <div class="reference-text">Accenture Technology Vision 2021 </div>
       </div>
     </div>
-    <line>
+
+  </div>    <line>
       <div class="background">
           <div class="公式LINE">
           <div class="icon"><img src="./img/icon-line.png"></div>
@@ -246,8 +253,6 @@
         </div>
       </div>
     </footer>
-  
-  </div>
   <script src="./quiz.js"></script>
 </body>
 </html>
