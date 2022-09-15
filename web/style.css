@@ -1,23 +1,31 @@
 .header{
   display: flex;
-  width: 1440px;
   height: 80px;
+  justify-content: space-between;
 }
 
+a{
+  color:#666666;
+  text-decoration: none;
+}
 .Frame5{
   display: flex;
-  margin-left: auto;
+}
+
+ul{
+  list-style: none;
 }
 
 .menu{
   display: flex;
   width: 180px;
   height: 25px;
-  position: relative;
+  gap: 32px;
+  margin-top: 30px;
 }
 
 .nav1{
-  width: 90px;
+  
   height: 22px;
   font-style: normal;
   font-weight: 700;
@@ -25,12 +33,10 @@
   line-height: 22px;
   letter-spacing: 0.1em;
   color: #666666;
-  position: absolute;
-  top: 50%;
 }
 
 .nav2{
-  width: 50px;
+  
   height: 22px;
   left: 115px;
   font-style: normal;
@@ -39,16 +45,14 @@
   line-height: 22px;
   letter-spacing: 0.1em;
   color: #666666;
-  position: absolute;
-  top: 50%;
+
 }
 
 .SNS{
   display: flex;
   width: 116px;
   height: 50px;
-  left:192px;
-  gap: 16px;
+  gap: 25px;
   top: 15px;
 }
 
@@ -60,28 +64,194 @@
 .nav4{
   width: 50px;
   height: 50px;
-  left: 66px;
+  margin-right: 10px;
+}
+
+/* main visual */
+.mainvisual-text{
+  position: absolute;
+  width: 500px;
+  height: 281px;
+  top: 230px;
+  background: #EFF2F5;
+  border-radius: 24px;
+}
+
+.mainvisual-text1{
+  width: 376px;
+  height: 29px;
+  margin-left: 62px;
+  margin-top: 40px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 180%;
+  color: #0071BC;
+}
+
+.mainvisual-text2{
+  width: 380px;
+  height: 160px;
+  margin-left: 62px;
+  margin-top: 12px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+.mainvisual-photo{
+  display: block;
+  margin-left: 278px;
+}
+
+.scrolldown{
+  width: 100px;
+  height: 21px;
+  margin-left: 126px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+}
+
+.fixed-line{
+  width: 288px;
+  height: 80px;
+  right: 16px;
+  bottom: 16px;
+  background: #5FDF5B;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+}
+
+.line-icon{
+  width: 36px;
+  height: 36px;
+  margin-left: 24px;
+  margin-top: 22px;
+}
+
+.fixed-line-text{
+  width: 150px;
+  height: 36px;
+  margin-left: 20px;
+  margin-top: 22px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.14em;
+  color: #FFFFFF;
+}
+
+.link-icon{
+  width: 18px;
+  height: 18px;
+  margin-top: 31px;  
+  margin-left: 15px;
+}
+
+/* about */
+.about{
+  width: 984px;
+  height: 442px;
+  margin: 0 auto;
+}
+
+.about-title{
+  height: 90px;
+  margin: 0 auto;
+}
+
+.about-title1{
+  width: 200px;
+  height: 54px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #333333;
+  margin: 0 auto;
+}
+
+.about-title2{
+  width: 93px;
+  height: 25px;
+  margin-top: 8px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 180%;
+  color: #0071BC;
+  margin: 0 auto;
+}
+
+.about-colum{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-photo{
+  width: 472px;
+  height: 312px;
+  border-radius: 24px;
+}
+
+.about-text{
+  width: 472px;
+  height: 175px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: #333333;
+  align-self: center;
+  
 }
 
 /* 公式LINE */
 .line{
-  position: absolute;
   width: 984px;
   height: 358px;
-  left:230px;
-  top: 1438px;
+  margin: 0 auto;
 }
 
 .background{
-  position: absolute;
-  left: 230px;
-  right: 0%;
-  top:1438px;
-  bottom: 0.28%;
+  background-image: url(./img/line.png);
+  position: relative;
   width: 984px;
   height: 357px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 56px;
 }
 
+.background::before{
+  background-color: #0071BC;
+  content: "";
+  opacity: 0.9;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 56px;
+}
 
 .公式LINE{
   position: absolute;
@@ -90,6 +260,7 @@
   height: 65px;
   top: 68px;
   left: 327px;
+
 }
 
 .icon{
@@ -171,11 +342,10 @@
 /* footer */
 .footer{
   position: relative;
-  border: 1px solid #eeeeee;
-  width: 1440px;
+  border-top: 1px solid #eeeeee;
   height: 355px;
-  top: 1875px;
   left: 0px;
+  margin-top: 40px;
 }
 
 .logo-f{
@@ -259,7 +429,8 @@
   right: 0%;
   top: 274.22px;
   bottom: 0px;
-  border: 1px solid #eeeeee
+  border-top: 1px solid #eeeeee;
+  text-align: center;
 }
 
 .copyright-text{
@@ -267,7 +438,6 @@
   width: 90px;
   height: 13px;
   top: 36px;
-  bottom: 31.78px;
   left: 47.15%;
   right: 47.15%;
   font-family: 'Plus Jakarta Sans';
@@ -279,4 +449,3 @@
   letter-spacing: 0.1em;
   color: #666666;
 }
-
