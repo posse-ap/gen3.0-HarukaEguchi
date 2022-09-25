@@ -1,3 +1,42 @@
+* {
+	float: none;
+	position: static;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  body{
+    width: 100%;
+  }
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* リセットCSS */
+button {
+  border-color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .header{
   display: flex;
   height: 80px;
@@ -68,13 +107,19 @@ ul{
 }
 
 /* main visual */
+
+.mainvisual-content{
+  display: flex;
+}
+
 .mainvisual-text{
-  position: absolute;
   width: 500px;
   height: 281px;
   top: 230px;
   background: #EFF2F5;
   border-radius: 24px;
+  z-index: 2;
+  margin-top: 5%;
 }
 
 .mainvisual-text1{
@@ -106,7 +151,59 @@ ul{
 
 .mainvisual-photo{
   display: block;
-  margin-left: 278px;
+  margin-left: -125px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px){
+  .mainvisual{
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .mainvisual-text{
+    margin-top: -25px;
+  }
+  .mainvisual-photo{
+    margin: 0;
+    border-radius: 0;
+  }
+  .mainvisual-text{
+    width: 100%;
+    align-self: center;
+    height: auto;
+    width: auto;
+
+    padding: 20px 11px 20px 24px;
+  }
+  .mainvisual-text1{
+    font-size: 12px;
+    margin-top: 0;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+  }
+  .mainvisual-text2{
+    font-size: 28px;
+    line-height: 1.5;
+    margin-top: 6px;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    
+  }
+  .mainvisual br{
+    display: none;
+  }
+
+  .mainvisual-content{
+    flex-direction: column-reverse;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .ScrollDown {
+      display: none;
+  }
 }
 
 .scrolldown{
@@ -165,7 +262,6 @@ ul{
 /* about */
 .about{
   width: 984px;
-  height: 442px;
   margin: 0 auto;
 }
 
@@ -175,7 +271,6 @@ ul{
 }
 
 .about-title1{
-  width: 200px;
   height: 54px;
   font-family: 'Noto Sans JP';
   font-style: normal;
@@ -183,11 +278,10 @@ ul{
   font-size: 36px;
   line-height: 150%;
   color: #333333;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .about-title2{
-  width: 93px;
   height: 25px;
   margin-top: 8px;
   font-family: 'Plus Jakarta Sans';
@@ -196,18 +290,21 @@ ul{
   font-size: 14px;
   line-height: 180%;
   color: #0071BC;
-  margin: 0 auto;
+  text-align: center;
 }
+
 
 .about-colum{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .about-photo{
   width: 472px;
   height: 312px;
   border-radius: 24px;
+  align-self: center;
 }
 
 .about-text{
@@ -223,9 +320,24 @@ ul{
   
 }
 
+@media screen and (max-width: 768px) {
+  .about{
+    width: 100%;
+  }
+  .about-colum {
+    flex-direction: column;
+
+  }
+  .about-title{
+    width: 100%;
+  
+  }
+  .about-text{
+    margin-top: 30px;
+  }
+}
 /* 公式LINE */
 .line{
-  width: 984px;
   height: 358px;
   margin: 0 auto;
 }
@@ -233,7 +345,7 @@ ul{
 .background{
   background-image: url(./img/line.png);
   position: relative;
-  width: 984px;
+  max-width: 984px;
   height: 357px;
   margin: 0 auto;
   background-position: center;
@@ -259,7 +371,9 @@ ul{
   width: 329px;
   height: 65px;
   top: 68px;
-  left: 327px;
+  left: 0;
+  right: 0;
+  margin: auto;
 
 }
 
@@ -286,7 +400,7 @@ ul{
   color: #FFFFFF;
 }
 
-.質問{
+.question{
   position: absolute;
   width: 540px;
   height: 66px;
@@ -300,6 +414,9 @@ ul{
   text-align: center;
   letter-spacing: 0.1em;
   color: #FFFFFF;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .link{
@@ -311,6 +428,9 @@ ul{
   left: 333px;
   background: #FFFFFF;
   border-radius: 98px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .LINE追加{
