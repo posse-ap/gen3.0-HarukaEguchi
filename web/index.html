@@ -8,48 +8,103 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="web.js"></script>
   <title>Posseサイト</title>
 </head>
 <body>
   <header>
     <div class="header"> 
-      <h1 class="logo"><img src="logo.png"></h1>
-        <div class="Frame5">
-          <div class="menu">
-          <div class="nav1">POSSEとは</div>
-          <div class="nav2">クイズ</div>
-          </div>
-        <div class="SNS">
-          <div class="nav3"><img src="Group 7.png"></div>
-          <div class="nav4"><img src="Group 10.png"></div>
-        </div>
-    </div>
+      <h1 class="logo"><img src="./img/logo.png"></h1>
+        <nav class="Frame5">
+          <ul class="menu">
+          <li class="nav1"><a href="index.html">トップページ</a></li>
+          <li class="nav2"><a href="quiz.html">クイズ</a></li>
+          </ul>
+        <ul class="SNS">
+          <li class="nav3"><a href="https://twitter.com/posse_program"><img src="./img/twitter-icon.png"></a></li>
+          <li class="nav4"><a href="https://www.instagram.com/posse_programming/"><img src="./img/insta-icon.png"></a></li>
+        </ul>
+    </nav>
   </header>
-  
+
+    <div class="conts-body">
+      <button class="hamburger">
+        <span class="hamburger_bar"></span>
+        <span class="hamburger_bar"></span>
+      </button>
+    
+      <nav class="hamburger_content">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="">ナビゲーション1</a></li>
+          <li class="nav-item"><a href="">ナビゲーション2</a></li>
+          <li class="nav-item"><a href="">ナビゲーション3</a></li>
+          <li class="nav-item"><a href="">ナビゲーション4</a></li>
+          <li class="nav-item"><a href="">ナビゲーション5</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  <mainvisual>
+    <div class="mainvisual">
+      <div class="mainvisual-content">
+        <div class="mainvisual-text">
+        <div class="mainvisual-text1">
+          学生プログラミングコミュニティ POSSE（ポッセ）
+        </div>
+        <div class="mainvisual-text2">
+          自分史上最高<br>を仲間と。
+        </div>
+      </div>
+      <div class="mainvisual-photo"><img src="./img/mainvisual.png"></div>
+    </div>
+      <div class="scrolldown">
+        ・Scroll Down
+      </div>
+      <a href="https://line.me/R/ti/p/@651htnqp?from=page"><div class="fixed-line">
+        <div class="line-icon"><img src="./img/icon-line.png"></div>
+        <div class="fixed-line-text">POSSE公式LINEで<br>最新情報をGET！</div>
+        <div class="link-icon"><img src="./img/icon-link.png"></div>
+      </div></a>
+    </div>
+  </mainvisual>
+  <about>
+    <div class="about">
+      <div class="about-title">
+        <div class="about-title1">POSSEとは</div>
+        <div class="about-title2">About Posse</div>
+      </div>
+      <div class="about-colum">
+        <div class="about-photo"><img src="./img/about.png"></div>
+        <div class="about-text">学生プログラミングコミュニティ「POSSE(ポッセ)」は、人格とプログラミング、二つの面での成長をスローガンに活動しており、大学生だけが集まって学びを深めるコミュニティです。<br>
+        プログラミングだけではありません。オフラインでのイベントや、旅行など様々な企画を行っています！<br>
+        それらを通じて、夏休みの大半をPOSSEで出来た仲間と過ごす人もたくさんいるほどメンバーとの仲が深まります。</div>
+      </div>
+    </div>
+  </about>
   <line>
-    <div class="background"><img src="グラデーション 1.png">
-      <div class="公式LINE">
-        <div class="icon"><img src="icon-line.png"></div>
+    <div class="background">
+        <div class="公式LINE">
+        <div class="icon"><img src="./img/icon-line.png"></div>
         <div class="POSSE公式LINE">POSSE 公式LINE</div>
-      </div>
-      <div class="質問"><p>公式LINEにてご質問を随時受け付けております。<br>詳細やPOSSE最新情報につきましては、公式LINEにてお知らせ致しますので<br>下記ボタンより友達追加をお願いします！</p>
-      </div>
-      <div class="link">
+        </div>
+        <div class="question"><p>公式LINEにてご質問を随時受け付けております。<br>詳細やPOSSE最新情報につきましては、公式LINEにてお知らせ致しますので<br>下記ボタンより友達追加をお願いします！</p>
+        </div>
+        <a href="https://line.me/R/ti/p/@651htnqp?from=page"><div class="link">
         <div class="LINE追加">LINE追加</div>
-        <div class="icon-link"><img src="icon-link.png"></div>
-      </div>
+        <div class="icon-link"><img src="./img/icon-link.png"></div>
+        </div></a>
     </div>
   </line>
   <footer>
     <div class="footer">
-      <div class="logo-f"><img src="logo (1).png"></div>
+      <div class="logo-f"><img src="./img/logo (1).png"></div>
       <div class="link-f">
-        <div class="posse公式サイト">POSSE公式サイト</div>
-        <div class="Frame"><img src="Frame.png"></div>
+        <div class="posse公式サイト"><a href="https://posse-ap.com/">POSSE公式サイト</div></a>
+        <div class="Frame"><img src="./img/icon-link.png"></div>
       </div>
       <div class="SNS-f">
-        <div class="Group7-f"><img src="Group 7.png"></div>
-        <div class="Group10-f"><img src="Group 10.png"></div>
+        <div class="Group7-f"><a href="https://twitter.com/posse_program"><img src="./img/twitter-icon.png"></div></a>
+        <div class="Group10-f"><a href="https://www.instagram.com/posse_programming/"><img src="./img/insta-icon.png"></div></a>
       </div>
       <div class="copyright">
         <div class="copyright-text">
@@ -57,6 +112,7 @@
         </div>
       </div>
     </div>
-    </footer>
+  </footer>
+ 
 </body>
 </html>
