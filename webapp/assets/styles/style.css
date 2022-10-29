@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+/* header ----------------------------------------------*/
+.webapp-header {
+/*   margin-right: 10px;
+  margin-left: 10px; */
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  background-color: #FFFFFF;
+  height: 64px;
+  align-items: center;
+}
+
+.header-inner-left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header-button {
+  color: #FFFFFF;
+  box-shadow: 0 5px 10px 0 #B4EBFF;
+  padding: 8px 40px 8px 40px;
+  border-radius: 20px;
+  background: rgb(15, 113, 188);
+  background: linear-gradient(90deg, rgba(15, 113, 188, 1) 0%, rgba(39, 162, 223, 1) 50%, rgba(58, 205, 254, 1) 100%);
+}
+
+/* main---------------------- */
+
+main{
+  background-color: #F5F5F8;
+}
+
+.main-contents{
+  display: flex;
+  padding: 20px 70px 100px 70px;
+  gap: 20px;
+}
+
+/* time */
+.main-study-time-list{
+  display: flex;
+  gap: 20px;
+}
+
+.mian-study-time-item{
+  background-color: #FFFFFF;
+  padding: 15px 45px 15px 45px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.main-study-time-title{
+  color: #80A7D5;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.study-time-number{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.study-time-hour{
+  color: #A5C2D8;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* language */
+
+.main-study-list{
+  display: flex;
+  gap: 20px;
+}
+
+.main-study-item{
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.main-study-language-title{
+  font-size: 20px;
+}
+
+
+/* mordal-------- */
+
+/* モーダルCSS */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,30,30,0.9);
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 70%;
+  max-width: 500px;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.main-date{
+  display: flex;
+  justify-content: center;
+}
+
+.main-date-text-symbol{
+  color: #80A7D5;
+}

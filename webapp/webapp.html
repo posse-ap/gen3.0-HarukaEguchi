@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <title>Webapp</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="webapp-header">
+    <div class="header-inner-left">
+      <div class="header-logo"><img src="./assets/img/logo.svg"></div>
+      <span class="header-inner-week">4th week</span>
+    </div>
+    <div class="header-inner-right">
+      <button class="header-button">
+        <p class="header-button-text" id="openModal">記録・投稿</p>
+      </button>
+      <!-- モーダルエリアここから -->
+      <section id="modalArea" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <div class="mordal-contents-left">
+              <ul class="mordal-contents-left-list">
+                <li class="mordal-contents-left-item">
+                  <p>学習日</p>
+                  <p>2020年10月27日</p>
+                </li>
+                <li class="mordal-contents-left-item">
+                  <p>学習コンテンツ(複数選択可)</p>
+                  <ul class="mordal-contents-stydy-list">
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">Ｎ予備校</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">ドットインストール</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">POSSE課題</span>
+                      </label>
+                    </il>
+                  </ul>
+                </li>
+                <li class="mordal-contents-left-item">
+                  <p>学習書籍(複数選択可)</p>
+                  <ul class="mordal-contents-stydy-list">
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">HTML</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">CSS</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">JavaScript</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">PHP</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">Laravel</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">SQL</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">SHELL</span>
+                      </label>
+                    </il>
+                    <il class="mordal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
+                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">情報システム基礎知識(その他)</span>
+                      </label>
+                    </il>
+                  </ul><!-- あああ -->
+                </li>
+              </ul>
+            </div>
+            <!-- 右！ -->
+            <div class="mordal-contents-right">
+              <ul class="mordal-contents-right-list">
+                <li class="mordal-contents-right-item"></li>
+                <li class="mordal-contents-right-item"></li>
+              </ul>
+            </div>
+          </div>
+          <div id="closeModal" class="closeModal">
+            ×
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- main -->
+  <main>
+    <ul class="main-contents">
+      <li class="main-study-time">
+        <div class="main-study-time-count">
+          <ul class="main-study-time-list">
+            <li class="mian-study-time-item">
+              <h2 class="main-study-time-title">Today</h2>
+              <p class="study-time-number">3</p>
+              <p class="study-time-hour">hour</p>
+            </li>
+            <li class="mian-study-time-item">
+              <h2 class="main-study-time-title">Month</h2>
+              <p class="study-time-number">120</p>
+              <p class="study-time-hour">hour</p>
+            </li>
+            <li class="mian-study-time-item">
+              <h2 class="main-study-time-title">Total</h2>
+              <p class="study-time-number">1348</p>
+              <p class="study-time-hour">hour</p>
+            </li>
+          </ul>
+        </div>
+        <div class="main-study-time-chart"><canvas id="barChart">
+          </canvas></div>
+      </li>
+      <li class="main-study-language">
+        <ul class="main-study-list">
+          <li class="main-study-item">
+            <h2 class="main-study-language-title">学習言語</h2>
+            <div class="main-study-language-chart"><canvas id="timeCircle1">
+              </canvas></div>
+          </li>
+          <li class="main-study-item">
+            <h2 class="main-study-language-title">学習コンテンツ</h2>
+            <div class="main-study-language-chart"><canvas id="timeCircle2">
+              </canvas></div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+<div class="main-date">
+  <i class="main-date-text-symbol">＜</i>
+  <p class="main-date-date">2020年 10月</p>
+  <i class="main-date-text-symbol">＞</i>
+
+</div>
+
+  </main>
+
+</body>
+<script src="./assets/webapp.js"></script>
+
+</html>
