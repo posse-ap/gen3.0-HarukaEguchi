@@ -23,7 +23,7 @@ button {
   margin-left: 10px; */
   display: flex;
   justify-content: space-between;
-  /* width: 100%; */
+  width: 100%;
   background-color: #FFFFFF;
   height: 64px;
   align-items: center;
@@ -48,18 +48,28 @@ button {
 
 main{
   background-color: #F5F5F8;
+  width: 100%;
 }
 
 .main-contents{
   display: flex;
-  padding: 20px 70px 100px 70px;
+  padding: 20px 50px 100px 50px;
   gap: 20px;
+}
+
+.main-study-time{
+  width: 50%;
+}
+
+.main-study-language{
+  width: 50%;
 }
 
 /* time */
 .main-study-time-list{
   display: flex;
   gap: 20px;
+  width: 100%;
 }
 
 .mian-study-time-item{
@@ -86,6 +96,13 @@ main{
   font-weight: normal;
 }
 
+.main-study-time-chart{
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 20px;
+}
+
 /* language */
 
 .main-study-list{
@@ -96,7 +113,8 @@ main{
 .main-study-item{
   background-color: #FFFFFF;
   border-radius: 10px;
-  padding: 20px;
+  padding: 7px;
+  width: 50%;
 }
 
 .main-study-language-title{
@@ -129,8 +147,9 @@ main{
   left: 50%;
   transform:translate(-50%,-50%);
   width: 70%;
-  max-width: 500px;
+  max-width: 700px;
   padding: 10px 30px;
+  border-radius: 20px;
   background-color: #fff;
 }
 
@@ -141,6 +160,7 @@ main{
   cursor: pointer;
 }
 
+/* modal 独自 */
 .main-date{
   display: flex;
   justify-content: center;
@@ -149,3 +169,77 @@ main{
 .main-date-text-symbol{
   color: #80A7D5;
 }
+
+.main-date-date{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.modalWrapper{
+  width: fit-content;
+}
+
+.modalContents{
+  display: flex;
+  gap: 10px;
+
+}
+
+
+.modal-contents-left-item{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-contents-left-item input{
+  background-color: #f5f4f9ea;
+  border-style: none;
+  border-radius: 10px;
+  font-size: x-large;
+
+}
+
+.modal-contents-right-item{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-contents-left{
+  max-width: 350px;
+}
+
+.modal-contents-right{
+  max-width: 350px;
+}
+
+.modal-contents-right-item input{
+  background-color: #f5f4f9ea;
+  border-style: none;
+  border-radius: 10px;
+  font-size: x-large;
+  max-width: fit-content;
+}
+
+.mardal-contents-study-checkbox{
+  cursor: pointer;
+  display: flex;
+}
+
+/* .modal-contents-study-checkbox-input{
+  margin: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.modal-contents-study-checkbox-input:hover{
+  background: rgba(0,0,0,.05) !important;
+}
+
+
+.ECM_CheckboxInput:hover > .ECM_CheckboxInput-DummyInput{
+  transform: scale(1.1);
+}
+
+.mardal-contents-study-checkbox{
+  background-color: #F5F5F8;
+} */

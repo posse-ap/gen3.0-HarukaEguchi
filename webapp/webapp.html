@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Webapp</title>
 </head>
 
@@ -26,73 +29,86 @@
         <div id="modalBg" class="modalBg"></div>
         <div class="modalWrapper">
           <div class="modalContents">
-            <div class="mordal-contents-left">
-              <ul class="mordal-contents-left-list">
-                <li class="mordal-contents-left-item">
+            <div class="modal-contents-left">
+              <ul class="modal-contents-left-list">
+                <li class="modal-contents-left-item">
                   <p>学習日</p>
-                  <p>2020年10月27日</p>
+                  <input type=”text” name=”name”>
+
+                  <!-- <p>2020年10月27日</p> -->
                 </li>
-                <li class="mordal-contents-left-item">
+                <li class="modal-contents-left-item">
                   <p>学習コンテンツ(複数選択可)</p>
-                  <ul class="mordal-contents-stydy-list">
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">Ｎ予備校</span>
+                  <ul class="modal-contents-stydy-list">
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">Ｎ予備校</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">ドットインストール</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">ドットインストール</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">POSSE課題</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">POSSE課題</span>
                       </label>
                     </il>
                   </ul>
                 </li>
-                <li class="mordal-contents-left-item">
+                <li class="modal-contents-left-item">
                   <p>学習書籍(複数選択可)</p>
-                  <ul class="mordal-contents-stydy-list">
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">HTML</span>
+                  <ul class="modal-contents-stydy-list">
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">HTML</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">CSS</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">CSS</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">JavaScript</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">JavaScript</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">PHP</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><i class="fas fa-check-circle"></i><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">PHP</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">Laravel</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">Laravel</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">SQL</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">SQL</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">SHELL</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">SHELL</span>
                       </label>
                     </il>
-                    <il class="mordal-contents-dtudy-item">
-                      <label class="mardal-contents-study-checkbox"><input class="mordal-contents-study-checkbox-input"
-                          type="checkbox"><span class="mordal-checkbox-input"><span class="mordal-checkbox-label">情報システム基礎知識(その他)</span>
+                    <il class="modal-contents-dtudy-item">
+                      <label class="mardal-contents-study-checkbox"><input class="modal-contents-study-checkbox-input"
+                          type="checkbox"><span class="modal-checkbox-input"><span
+                            class="modal-checkbox-label">情報システム基礎知識(その他)</span>
                       </label>
                     </il>
                   </ul><!-- あああ -->
@@ -100,10 +116,21 @@
               </ul>
             </div>
             <!-- 右！ -->
-            <div class="mordal-contents-right">
-              <ul class="mordal-contents-right-list">
-                <li class="mordal-contents-right-item"></li>
-                <li class="mordal-contents-right-item"></li>
+            <div class="modal-contents-right">
+              <ul class="modal-contents-right-list">
+                <li class="modal-contents-right-item">
+                  <p>学習時間</p>
+                  <input type=”text” name=”name”>
+                </li>
+                <li class="modal-contents-right-item">
+                  <div class=modal-twitter-comment>
+                    <p>Twitter用コメント</p>
+                    <input type=”text” name=”name” style="height: 100px;">
+                </li>
+                <li clsdd="modal-contents-right-item"><label class="mardal-contents-study-checkbox"><input
+                      class="modal-contents-study-checkbox-input" type="checkbox"><span
+                      class="modal-checkbox-input"><span class="modal-checkbox-label">Twitterに自動投稿する</span>
+                  </label></li>
               </ul>
             </div>
           </div>
@@ -155,12 +182,12 @@
         </ul>
       </li>
     </ul>
-<div class="main-date">
-  <i class="main-date-text-symbol">＜</i>
-  <p class="main-date-date">2020年 10月</p>
-  <i class="main-date-text-symbol">＞</i>
+    <div class="main-date">
+      <i class="main-date-text-symbol">＜</i>
+      <p class="main-date-date">2020年 10月</p>
+      <i class="main-date-text-symbol">＞</i>
 
-</div>
+    </div>
 
   </main>
 
