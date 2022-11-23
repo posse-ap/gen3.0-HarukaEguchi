@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,li {
+  list-style: none;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+/* ブレークポイント768px */
+
+/* header ---------------------------------------------------------------------------------*/
+
+/* @media screen and (max-width:768px) {
+  header{
+
+  }
+  
+} */
+
+.quiz-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.header-logo {
+  padding-top: 8px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header-nav {
+  font-family: 'Noto Sans JP';
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #666666;
+}
+
+.header-icons-list {
+  display: flex;
+  gap: 32px;
+  padding-top: 16px;
+}
+
+/* main-top -------------------------------------------------------------------------------*/
+
+.main-top-background {
+  width: 100%;
+  background-image: url(./img/quiz/bg-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+}
+
+.main-top-title {
+  padding-top: 111px;
+  padding-left: 204px;
+}
+
+.main-top-title-1 {
+  display: block;
+  font-family: 'Noto Sans JP';
+  font-size: 18px;
+  line-height: 180%;
+  color: #EFF2F5;
+}
+
+.main-top-title-2 {
+  display: block;
+  font-family: 'Noto Sans JP';
+  font-size: 60px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+/* quiz -----------------------------------------------------------------------------------*/
+.quiz-container{
+  margin-top: 48px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.quiz-box{
+
+}
+
+.Q{
+  background-color: #0071BC;
+  border-radius: 8px;
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 8px 16px;
+}
+
+.question-title{
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  text-align: justify;
+  color: #333333;  
+}
+
+main .quiz-container img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.answer{
+  /* margin-right: 50px;
+  margin-left: 50px; */
+  /* width: 100%; */
+}
+
+.A{
+  background: #E34E70;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Noto Sans JP";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 8px 16px;
+}
+
+.answers{
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width:768px) {
+  .answers{
+    display: block;
+  }
+}
+
+
+.answer-lists{
+  display: flex;
+  gap: 15px;
+}
+
+.answer-item{
+  box-sizing: border-box;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+  /* width: 312px;
+  height: 80px; */
+  background: #EFF2F5;
+  border: 5px solid #EEEEEE;
+  border-radius: 8px;
+  font-family: "Noto Sans JP";
+  cursor: pointer;
+  
+  background: transparent;
+  
+}
+
+.answer-item-button{
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+}
+.answer-item:hover{
+  opacity: 0.6
+}
+
+.answer-item-button.is-selected{
+  /* background-color: #eff2f5; */
+  border-color: #0071bc;
+}
+
+.answer-box{
+  height: 143px;
+  background: #FFF2F5;
+  border-radius: 8px;
+  display: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.answer-box.is-correct {
+  display: block;
+}
+
+.answer-box.is-incorrect {
+  background-color: #EFF2F5;
+  display: block;
+}
+
+.answer-box-title {
+  margin-left: 40px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  padding-top: 15px;
+}
+
+.is-correct .answer-box-title {
+  color: #e34e70;
+}
+
+.is-incorrect .answer-box-title {
+  color: #0071BC;
+}
+
+.answer-box-contents{
+  margin-top: 20px;
+}
+
+.answer-box-contents-label{
+  margin-left: 40px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 180%;
+  color: #333333;
+}
+
+.answer-box-contents-text{
+  margin-left: 30px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+}
+
+.amswer-item{
+
+}
+
+.answer-item .arrow-icon{
+  display: flex;
+  text-align: right;
+}
+
+.answer-item:disabled .arrow-icon {
+  display: none;
+}
+
+.quiz-note{
+  /* width: 984px;
+  height: 80px;
+  left: 0px;
+  top: 0px; */
+  margin-left: 50px;
+  padding: 15px;
+  background: #F6F6F6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.quiz-note-icon{
+/*   margin-left: 24px;
+  margin-top: 32px; */
+  margin-top: 5px;
+}
+
+.quiz-note-text{
+/*   width: 411px;
+  height: 32px;
+  margin-left: 30px;
+  margin-top: 24px; */
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+}
+
+/* posse line -----------------------------------------------------------------------------*/
+.posse-line-section {
+  background-image: url(./img/bg-line.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 28px;
+  padding: 42px 24px;
+  position: relative;
+  overflow: hidden;
+  margin: 16px;
+  z-index: -2;
+}
+
+.posse-line-section::before {
+  background-color: #0071BC;
+  content: "";
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  /* min-height: 100vh; */
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.posse-line-section-contents{
+/*   z-index: 100; */
+}
+
+.posse-line-title {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.posse-line-inner-title {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 180%;
+  text-align: center;
+  color: #FFFFFF;
+/*   z-index: 1; */
+}
+
+.posse-line-icon {
+  padding-top: 10px;
+/*   z-index: 1; */
+}
+
+.posse-line-text {
+  font-family: 'Noto Sans JP';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  /* z-index: 1; */
+}
+
+.posse-line-add {
+  margin-top: 14px;
+/*   z-index: 1; */
+}
+
+.posse-line-add-inner {
+  background-color: #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+ /*  z-index: 1; */
+}
+
+.posse-line-add-inner p {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.1em;
+  color: #666666;
+/*   z-index: 1; */
+}
+
+.posse-line-add-inner .line-icon {
+  transform: translate(0, 15%);
+  position: absolute;
+  right: 20%;
+  /* z-index: 1; */
+}
+
+/* footer */
+.footer-socialmedia {
+  text-align: center;
+  margin-top: 102px;
+  border: 1px solid #EEEEEE;
+}
+
+.footer-posse-logo {
+  padding-top: 56px;
+  padding-bottom: 25px;
+}
+
+.posse-official-title{
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #666666;
+}
+
+.posse-socialmedia-list{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.footer-copywrite{
+  border: 1px solid #EEEEEE;
+}
+
+.footer-copywrite p{
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #666666;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
