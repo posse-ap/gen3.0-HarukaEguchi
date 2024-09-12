@@ -1,11 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color:#666666;
+  text-decoration: none;
+}
+
 .header{
   align-items: center;
-  display: flex;
   padding: 15px 24px;
   position: fixed;
   z-index: 1000;
   background-color: #fff;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .Frame5{
@@ -17,15 +28,20 @@
   align-items: center;
 }
 
-.navigation{
+.header-inner{
   display: flex;
+  margin-right: 30px;
 }
 
-.menu{
+.nav-list{
   display: flex;
   width: 180px;
   height: 25px;
   position: relative;
+}
+
+li{
+  list-style: none;
 }
 
 .nav1{
@@ -76,9 +92,8 @@
 }
 
 .header-photo{
-  width: 100%;
   height: 320px;
-  left: 0px;
+  left: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
 }
 
@@ -111,7 +126,7 @@
   color: #FFFFFF;
 }
 
-quiz{
+.quiz{
   margin-top: 120px;
   width: 984px;
   left: 228px;
@@ -168,16 +183,37 @@ ul{
   list-style: none;
 }
 
+.arrow{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-left: 12px solid #333333;
+  border-right: 0;
+}
+
+.choice:disabled .arrow{
+  display: none;
+}
+.choice:disabled .arrow{
+  display: none;
+}
+.choice:disabled .arrow{
+  display: none;
+}
+
+
 .choices{
   display: flex;
   gap: 24px;
   margin-top: 16px;
   align-items: flex-start;
-  padding: 0px;
+  margin-bottom: 16px;
 
 }
 
-.choice1{
+.choice{
   box-sizing: border-box;
   align-items: center;
   padding: 24px;
@@ -189,47 +225,82 @@ ul{
   border-radius: 8px;
   font-family:"Noto Sans JP";
   cursor:pointer;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.choice1:hover{
+.choice:hover{
   opacity:0.6
 }
 
-.choice2{
-  box-sizing: border-box;
-  align-items: center;
-  padding: 24px;
-  gap: 8px;
-  width: 312px;
-  height: 80px;
-  background: #EFF2F5;
-  border: 5px solid #EEEEEE;
+.choice.is-selected{
+  background-color: #eff2f5;
+  border-color: #0071bc;
+}
+
+.answerbox{
+  width: 984px;
+  height: 143px;
+  background: #FFF2F5;
   border-radius: 8px;
-  font-family:"Noto Sans JP";
-  cursor:pointer;
+  display: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.choice2:hover{
-  opacity:0.6
+.answerbox.is-correct{
+  display: block;
+}
+.answerbox.is-incorrect{
+  background-color: #EFF2F5;
+  display: block;
 }
 
-.choice3{
-  box-sizing: border-box;
-  align-items: center;
-  padding: 24px;
-  gap: 8px;
-  width: 312px;
-  height: 80px;
-  background: #EFF2F5;
-  border: 5px solid #EEEEEE;
-  border-radius: 8px;
-  font-family:"Noto Sans JP";
-  cursor:pointer;
+
+.answer-correct-title{
+  margin-left: 40px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  padding-top: 15px;
 }
 
-.choice3:hover{
-  opacity:0.6
+.is-correct .answer-correct-title{
+  color: #e34e70;
 }
+.is-incorrect .answer-correct-title{
+  color: #0071BC;
+}
+
+.answer-correct-content{
+  margin-top: 20px;
+}
+.answer-A{
+  margin-left: 40px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 180%;
+  color: #333333;
+}
+
+.js-answerText{
+  margin-left: 30px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 180%;
+  color: #333333;
+}
+
 
 .reference{
   width: 984px;
@@ -240,6 +311,18 @@ ul{
   border-radius: 8px;
   display: flex;
 }
+
+.reference-6{
+  width: 984px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: #F6F6F6;
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 100px;
+}
+
 .reference-icon{
   width: 24.96px;
   height: 16.39px;
@@ -260,7 +343,6 @@ ul{
 }
 
 .q2-image{
-  margin-top: 64px;
   margin: 0 auto;
   margin-top: 30px;
   width: 458px;
@@ -268,7 +350,6 @@ ul{
 }
 
 .q3-image{
-  margin-top: 64px;
   margin: 0 auto;
   margin-top: 30px;
   width: 552px;
@@ -276,7 +357,6 @@ ul{
 }
 
 .q4-image{
-  margin-top: 64px;
   margin: 0 auto;
   margin-top: 30px;
   width: 520px;
@@ -284,27 +364,144 @@ ul{
 }
 
 .q5-image{
-  margin-top: 64px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 70px;
   width: 561px;
-  height:324px;
+  height: 324px;
 }
 
 .q6-image{
-  margin-top: 64px;
   margin: 0 auto;
   margin-top: 30px;
   width: 718px;
   height:381px;
 }
 
-/* footerどこー－－－－－ */
-footer{
+/* 公式LINE */
+line{
+  width: 984px;
+  height: 358px;
+  margin: 0 auto;
+}
+
+.background{
+  background-image: url(./line.png);
   position: relative;
-  border: 1px solid #eeeeee;
+  width: 984px;
+  height: 357px;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  border-radius: 56px;
+}
+
+.background::before{
+  background-color: #0071BC;
+  content: "";
+  opacity: 0.9;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-radius: 56px;
+}
+
+.公式LINE{
+  position: absolute;
+  display: flex;
+  width: 329px;
+  height: 65px;
+  top: 68px;
+  left: 327px;
+
+}
+
+.icon{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 13px;
+  left: 0px;
+
+}
+
+.POSSE公式LINE{
+  position: absolute;
+  width: 290px;
+  height: 65px;
+  left: 48px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 180%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.質問{
+  position: absolute;
+  width: 540px;
+  height: 66px;
+  top: 135px;
+  left: 225px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.link{
+  position: absolute;
+  display: flex;
+  width: 320px;
+  height: 50px;
+  top: 239px;
+  left: 333px;
+  background: #FFFFFF;
+  border-radius: 98px;
+}
+
+.LINE追加{
+  position: absolute;
+  width: 77px;
+  height: 23.39px;
+  top: 13.9px;
+  left: 121px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #666666;
+}
+
+.icon-link{
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 15px;
+  left: 287px;
+}
+
+/* footer */
+.footer{
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #eeeeee;
   height: 355px;
   left: 0px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .logo-f{
@@ -315,7 +512,7 @@ footer{
   right: 0;
   top: 56px;
   margin: auto;
-  
+
 }
 
 .link-f{
@@ -327,7 +524,6 @@ footer{
   left: 0;
   right: 0;
   margin: auto;
-  
 }
 
 .posse公式サイト{
@@ -360,7 +556,7 @@ footer{
   left: 0;
   right: 0;
   margin: auto;
-  top: 176.22px;
+  top: 42px;
   gap: 8px;
 }
 
@@ -370,7 +566,6 @@ footer{
   top: 176.22px;
   left: 0px;
   right: 58px;
-  
 }
 
 .Group10-f{
@@ -379,16 +574,16 @@ footer{
   top: 176.22px;
   left: 58px;
   right: 0px;
-  
 }
 
 .copyright{
   position: absolute;
   left: 0%;
   right: 0%;
-  top: 274.22px;
+  top: 234.22px;
   bottom: 0px;
-  border: 1px solid #eeeeee
+  border-top: 1px solid #eeeeee;
+  text-align: center;
 }
 
 .copyright-text{
@@ -396,7 +591,6 @@ footer{
   width: 90px;
   height: 13px;
   top: 36px;
-  bottom: 31.78px;
   left: 47.15%;
   right: 47.15%;
   font-family: 'Plus Jakarta Sans';
