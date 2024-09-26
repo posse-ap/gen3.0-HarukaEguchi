@@ -1,0 +1,410 @@
+.header{
+  align-items: center;
+  display: flex;
+  padding: 15px 24px;
+  position: fixed;
+  z-index: 1000;
+  background-color: #fff;
+  width: 100%;
+}
+
+.Frame5{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  align-items: center;
+}
+
+.navigation{
+  display: flex;
+}
+
+.menu{
+  display: flex;
+  width: 180px;
+  height: 25px;
+  position: relative;
+}
+
+.nav1{
+  width: 90px;
+  height: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #666666;
+  position: absolute;
+  top: 50%;
+}
+
+.nav2{
+  width: 50px;
+  height: 22px;
+  left: 115px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #666666;
+  position: absolute;
+  top: 50%;
+}
+
+.SNS{
+  display: flex;
+  width: 116px;
+  height: 50px;
+  left:192px;
+  gap: 16px;
+  top: 15px;
+}
+
+.nav3{
+  width: 50px;
+  height: 50px;
+}
+
+.nav4{
+  width: 50px;
+  height: 50px;
+  left: 66px;
+}
+
+.header-photo{
+  width: 100%;
+  height: 320px;
+  left: 0px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+
+.header-title1{
+  position: absolute;
+  width: 96px;
+  height: 32px;
+  left: 204px;
+  top: 110px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #EFF2F5;
+}
+
+.header-title2{
+  position: absolute;
+  width: 236px;
+  height: 90px;
+  left: 204px;
+  top: 154px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: #FFFFFF;
+}
+
+quiz{
+  margin-top: 120px;
+  width: 984px;
+  left: 228px;
+  position: absolute;
+}
+
+.Q{
+  padding: 8px 16px;
+  background: #0071BC;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.quiztext{
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 24px;
+  font-family: "Noto Sans JP";
+  width: 984px;
+  height: 108px;
+  margin-top: 30px;
+}
+
+.q1-image{
+  width: 718px;
+  height: 357px;
+  margin-top: 64px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+
+.A{
+  background: #E34E70;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-family:"Noto Sans JP";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 8px 16px;
+}
+
+ul{
+  list-style: none;
+}
+
+.choices{
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+  align-items: flex-start;
+  padding: 0px;
+
+}
+
+.choice1{
+  box-sizing: border-box;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+  width: 312px;
+  height: 80px;
+  background: #EFF2F5;
+  border: 5px solid #EEEEEE;
+  border-radius: 8px;
+  font-family:"Noto Sans JP";
+  cursor:pointer;
+}
+
+.choice1:hover{
+  opacity:0.6
+}
+
+.choice2{
+  box-sizing: border-box;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+  width: 312px;
+  height: 80px;
+  background: #EFF2F5;
+  border: 5px solid #EEEEEE;
+  border-radius: 8px;
+  font-family:"Noto Sans JP";
+  cursor:pointer;
+}
+
+.choice2:hover{
+  opacity:0.6
+}
+
+.choice3{
+  box-sizing: border-box;
+  align-items: center;
+  padding: 24px;
+  gap: 8px;
+  width: 312px;
+  height: 80px;
+  background: #EFF2F5;
+  border: 5px solid #EEEEEE;
+  border-radius: 8px;
+  font-family:"Noto Sans JP";
+  cursor:pointer;
+}
+
+.choice3:hover{
+  opacity:0.6
+}
+
+.reference{
+  width: 984px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: #F6F6F6;
+  border-radius: 8px;
+  display: flex;
+}
+.reference-icon{
+  width: 24.96px;
+  height: 16.39px;
+  margin-left: 24px;
+  margin-top: 32px;
+}
+.reference-text{
+  width: 411px;
+  height: 32px;
+  margin-left: 30px;
+  margin-top: 24px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.q2-image{
+  margin-top: 64px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 458px;
+  height:358px;
+}
+
+.q3-image{
+  margin-top: 64px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 552px;
+  height:357px;
+}
+
+.q4-image{
+  margin-top: 64px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 520px;
+  height:352px;
+}
+
+.q5-image{
+  margin-top: 64px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 561px;
+  height:324px;
+}
+
+.q6-image{
+  margin-top: 64px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 718px;
+  height:381px;
+}
+
+/* footerどこー－－－－－ */
+footer{
+  position: relative;
+  border: 1px solid #eeeeee;
+  height: 355px;
+  left: 0px;
+}
+
+.logo-f{
+  width: 202px;
+  height: 39.22px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 56px;
+  margin: auto;
+  
+}
+
+.link-f{
+  position: absolute;
+  display: flex;
+  width: 139px;
+  height: 25px;
+  top: 119.22px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+}
+
+.posse公式サイト{
+  width: 140px;
+  height: 25px;
+  left: 1px;
+  top: 0px;
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color:#666666;
+}
+
+.Frame{
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 140px;
+  top: 5px;
+}
+
+.SNS-f{
+  display: flex;
+  position: absolute;
+  width: 108px;
+  height: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 176.22px;
+  gap: 8px;
+}
+
+.Group7-f{
+  width: 50px;
+  height: 50px;
+  top: 176.22px;
+  left: 0px;
+  right: 58px;
+  
+}
+
+.Group10-f{
+  width: 50px;
+  height: 50px;
+  top: 176.22px;
+  left: 58px;
+  right: 0px;
+  
+}
+
+.copyright{
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 274.22px;
+  bottom: 0px;
+  border: 1px solid #eeeeee
+}
+
+.copyright-text{
+  position: absolute;
+  width: 90px;
+  height: 13px;
+  top: 36px;
+  bottom: 31.78px;
+  left: 47.15%;
+  right: 47.15%;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #666666;
+}
